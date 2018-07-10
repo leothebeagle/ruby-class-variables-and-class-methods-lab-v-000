@@ -16,6 +16,13 @@ class Song
     @@artists.uniq
   end
 
+  def self.genre_count
+    @@genre_incidence = {}
+    @@genres.each do |genre|
+      genre_incidence[genre] ||= 0
+      genre_incidence[genre] += 1
+  end
+
 
   attr_accessor :name, :artist, :genre
 
