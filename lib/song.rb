@@ -21,6 +21,7 @@ class Song
     @@genres.each do |genre|
       genre_incidence[genre] ||= 0
       genre_incidence[genre] += 1
+    end
   end
 
 
