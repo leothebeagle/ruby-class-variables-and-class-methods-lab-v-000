@@ -36,7 +36,4 @@ class Song
     @@genres << self.genre
     @@artists << self.artist
   end
-
-
-
 end
