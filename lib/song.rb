@@ -22,6 +22,7 @@ class Song
       genre_incidence[genre] ||= 0
       genre_incidence[genre] += 1
     end
+    @@genre_incidence
   end
 
 
