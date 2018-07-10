@@ -19,8 +19,8 @@ class Song
   def self.genre_count
     @@genre_incidence = {}
     @@genres.each do |genre|
-      genre_incidence[genre] ||= 0
-      genre_incidence[genre] += 1
+      @@genre_incidence[genre] ||= 0
+      @@genre_incidence[genre] += 1
     end
     @@genre_incidence
   end
