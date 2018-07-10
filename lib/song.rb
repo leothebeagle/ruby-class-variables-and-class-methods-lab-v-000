@@ -13,9 +13,9 @@ class Song
   end
 
   def self.artists
-    
+
   end
-  
+
 
   attr_accessor :name, :artist, :genre
 
@@ -25,7 +25,7 @@ class Song
     @genre = genre
     @@count += 1
     @@genres << self.genre
-    @@artist << self.artist
+    @@artists << self.artist
   end
 
 
